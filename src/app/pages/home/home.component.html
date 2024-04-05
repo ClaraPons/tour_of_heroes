@@ -1,0 +1,17 @@
+<div>
+    <h2>Home</h2>
+
+    <ng-container *ngIf="false">
+        <app-first-component 
+            [textButton]="'button1'"
+            (setInfo)="getInfo($event)"
+        ></app-first-component>
+    </ng-container>
+    
+    <app-first-component [textButton]="'button2'"></app-first-component>
+
+    <app-first-component [textButton]="'button3'"></app-first-component>
+
+    <app-first-component [textButton]="'button4'"></app-first-component>
+
+</div>
